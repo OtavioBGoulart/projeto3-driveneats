@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Driven Eats</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="topo">
+        <div class="topo-marca">
+            <h1 class="nome"><strong>Driven Eats</strong></h1>
+            <p class="merchan">Sua comida em 6 minutos</p>
+        </div>
+    </div>
+    <div class="conteudo">
+        <div class="escolha-texto">
+            <h1><strong>Primeiro, seu prato</strong></h1>
+        </div>
+        <div class="menu-wrapper">
+            <div class="menu-foto pratoone" onclick="selecaoprato('.pratoone', 'Frango Ying Yang', '14.90', '.iconepratoone')">
+                <img src="./pratos/frango_yin_yang.png" />
+                <h1><strong>Frango Ying Yang</strong></h1>
+                <h2>Um pouco de batata, um pouco de salada</h2>
+                <div class="precoconfirmed">
+                    <p>R$ 14,90</p>
+                    <ion-icon class="iconepratoone escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="menu-foto pratotwo" onclick="selecaoprato('.pratotwo', 'Bife bovino', '21.90', '.iconepratotwo')">
+                <img src="./pratos/bifeboii.jpg" />
+                <h1><strong>Bife bovino</strong></h1>
+                <h2>Um pouco de batata, um pouco de salada</h2>
+                <div class="precoconfirmed">
+                    <p>R$ 21,90</p>
+                    <ion-icon class="iconepratotwo escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="menu-foto pratothree" onclick="selecaoprato('.pratothree', 'Picanha', '35.50', '.iconepratothree')">
+                <img src="./pratos/picanha.jpeg" />
+                <h1><strong>Picanha</strong></h1>
+                <h2>Um pouco de batata, um pouco de arroz</h2>
+                <div class="precoconfirmed">
+                    <p>R$ 35,50</p>
+                    <ion-icon class="iconepratothree escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="menu-foto pratofor" onclick="selecaoprato('.pratofor', 'Peixe empanado', '20.90', '.iconepratofor')">
+                <img src="./pratos/peixeempanado.jpg" />
+                <h1><strong>Peixe empanado</strong></h1>
+                <h2>Um pouco de batata, um pouco de arroz</h2>
+                <div class="precoconfirmed">
+                    <p>R$20,90</p>
+                    <ion-icon class="iconepratofor escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="menu-foto pratofive" onclick="selecaoprato('.pratofive', 'Strogonoff de Frango', '15.90', '.iconepratofive')">
+                <img src="./pratos/strogonof.webp" />
+                <h1><strong>Strgonoff de frango</strong></h1>
+                <h2>Acompanha batata palha e salada</h2>
+                <div class="precoconfirmed">
+                    <p>R$ 15,90</p>
+                    <ion-icon class="iconepratofive escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="escolha-texto">
+            <h1><strong>Agora, sua bebida</strong></h1>
+        </div> 
+        <div class="menu-wrapper">
+            <div class="menu-foto bebone" onclick="selecaobeb('.bebone', 'Coca Cola', '5.90', '.iconebebidaone')">
+                <img src="./bebidas/coca-cola.png" />
+                <h1><strong>Coca Cola</strong></h1>
+                <h2>Lata 350ml</h2>
+                <div class="precoconfirmed">
+                    <p>R$ 5,90</p>
+                    <ion-icon class="iconebebidaone escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="menu-foto bebtwo" onclick="selecaobeb('.bebtwo', 'Pepsi', '4.90', '.iconebebidatwo')">
+                <img src="./bebidas/pepsi.jpg" />
+                <h1><strong>Pepsi</strong></h1>
+                <h2>Lata 350ml</h2>
+                <div class="precoconfirmed">
+                    <p>R$ 4,90</p>
+                    <ion-icon class="iconebebidatwo escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="menu-foto bebthree" onclick="selecaobeb('.bebthree', 'Fanta', '5.00', '.iconebebidathree')">
+                <img src="./bebidas/fanta.jpg" />
+                <h1><strong>Fanta</strong></h1>
+                <h2>Lata 350ml</h2>
+                <div class="precoconfirmed">
+                    <p>R$ 5,00</p>
+                    <ion-icon class="iconebebidathree escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="menu-foto bebfor" onclick="selecaobeb('.bebfor', 'Guaraná Antártica', '5.50', '.iconebebidafor')">
+                <img src="./bebidas/guarana.jpg" />
+                <h1><strong>Guaraná Antártica</strong></h1>
+                <h2>Lata 350ml</h2>
+                <div class="precoconfirmed">
+                    <p>R$ 5,50</p>
+                    <ion-icon class="iconebebidafor escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="escolha-texto">
+            <h1><strong>Por fim, sua sobremesa</strong></h1>
+        </div>
+        <div class="menu-wrapper">
+            <div class="menu-foto sobone" onclick="selecaosob('.sobone', 'Pudim', '6.50', '.iconesobremesaone')">
+                <img src="./sob/pudim.png" />
+                <h1><strong>Sobremesa</strong></h1>
+                <h2>Pudim</h2>
+                <div class="precoconfirmed">
+                    <p>R$ 6,50</p>
+                    <ion-icon class="iconesobremesaone escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="menu-foto sobtwo" onclick="selecaosob('.sobtwo', 'Mousse de maracujá', '6.50', '.iconesobremesatwo')">
+                <img src="./sob/maracuja.webp" />
+                <h1><strong>Sobremesa</strong></h1>
+                <h2>Mousse de maracujá</h2>
+                <div class="precoconfirmed">
+                    <p>R$ 6,50</p>
+                    <ion-icon class="iconesobremesatwo escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="menu-foto sobthree" onclick="selecaosob('.sobthree', 'Cheesecake', '8.90', '.iconesobremesathree')">
+                <img src="./sob/cheesecake.jpeg" />
+                <h1><strong>Sobremesa</strong></h1>
+                <h2>Cheesecake</h2>
+                <div class="precoconfirmed">
+                    <p>R$ 8,90</p>
+                    <ion-icon class="iconesobremesathree escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="menu-foto sobfor" onclick="selecaosob('.sobfor', 'Brownie', '4.50', '.iconesobremesafor')">
+                <img src="./sob/brownie.jpg" />
+                <h1><strong>Sobremesa</strong></h1>
+                <h2>Brownie</h2>
+                <div class="precoconfirmed">
+                    <p>R$ 4,50</p>
+                    <ion-icon class="iconesobremesafor escondido" name="checkmark-circle-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="barra-inferior">
+        <button class="desabilitado">
+            <p class="texto-pedir">Selecione os 3 itens<br> para fechar o pedido</p>
+        </button>
+        <button class="habilitado escondido" onclick="enviarpedido()">
+            <p class="texto-pedir">Fechar pedido</p>
+        </button>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
